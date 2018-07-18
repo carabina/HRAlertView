@@ -13,12 +13,13 @@ Pod::Spec.new do |s|
     s.homepage                  = 'https://github.com/luhuaren/HRAlertView'
     s.license                   = { :type => 'TbagLicense', :file => 'LICENSE' }
     s.author                    = { 'tbag' => 'tbag@163.com' }
-    s.source                    = { :git => 'https://github.com/HRAlertView/HRAlertView.git', :tag => s.version}
+    s.source                    = { :git => 'https://github.com/luhuaren/HRAlertView.git', :tag => s.version}
     s.frameworks                = 'Foundation', 'UIKit'
     s.exclude_files             = '**/*.md', '**/LICENSE'
-    s.source_files              = 'HRAlertView/HRAlertView.h,HRAlertView.m'
+    s.source_files              = 'HRAlertView/{HRAlertView.h,HRAlertView.m}'
     
     s.requires_arc              = true
     s.static_framework          = true
-    s.ios.deployment_target     = '7.0'
+    s.ios.deployment_target     = '8.0'
+    s.dependency 'Masonry',     '~> 1.1.0'
 end
